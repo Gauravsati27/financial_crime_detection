@@ -1,12 +1,12 @@
 import pandas as pd
 import numpy as np
-from faker import Faker
+from faker import Faker  # Changed import
 import random
 import os
 
 def generate_transaction_data(save_path):
-    fake = Faker()
-    Faker.seed(42)
+    fake = Faker()  # Changed instantiation
+    Faker.seed_instance(42)  # Changed seeding method
     np.random.seed(42)
     random.seed(42)
 
